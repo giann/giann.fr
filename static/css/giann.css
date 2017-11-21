@@ -1,0 +1,30 @@
+/* Palette */
+:root {
+    --background:     #1E2541;
+    --foreground:     #EEFFFF;
+    --black:          #1E2541;
+    --red:            #F0719B;
+    --green:          #5AF7B0;
+    --yellow:         #FFA56B;
+    --blue:           #57C7FF;
+    --magenta:        #C792EA;
+    --cyan:           #89DDFF;
+    --white:          #EEFFFF;
+    --bright-black:   #354274;
+    --bright-red:     #F02E6E;
+    --bright-green:   #2CE592;
+    --bright-yellow:  #FF8537;
+    --bright-blue:    #1DA0E2;
+    --bright-magenta: #A742EA;
+    --bright-cyan:    #47BAE8;
+    --bright-white:   #DEE6E7;
+    --color16:        #2A335A;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0;
+    background-color: var(--background);
+    background-image: linear-gradient( to top left, var(--black), var(--bright-black) 70% );
+    color: white;
+}

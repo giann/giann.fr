@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=1,  minimum-scale=1, user-scalable=no">
+    <title><%= page_title or "Giann" %></title>
+
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,300i,400,400i,600,600i" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/static/css/giann.css?v=1">
+</head>
+<body>
+    <% content_for("inner") %>
+</body>
+</html>
