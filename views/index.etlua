@@ -1,0 +1,35 @@
+<h1>Giann</h1>
+
+<section class="projects">
+    
+    <div class="projects__project">
+        <a href="https://fengari.io">
+            <img src="https://fengari.io/static/images/logo.png" alt="Fengari" width="152" class="projects__project__logo">
+        </a>
+    </div>
+
+    <div class="projects__project">
+        <a href="https://github.com/giann/sirocco">
+            <img src="https://github.com/giann/sirocco/raw/master/assets/logo.png" alt="Sirocco" width="152" class="projects__project__logo">
+        </a>
+    </div>
+
+    <div class="projects__project">
+        <a href="https://github.com/giann/croissant">
+            <img src="https://github.com/giann/croissant/raw/master/assets/logo.png" alt="Croissant" width="152" class="projects__project__logo">
+        </a>
+    </div>
+
+    <div class="projects__project">
+        <a href="https://github.com/giann/fourmi">
+            <img src="https://github.com/giann/fourmi/raw/master/assets/logo.png" alt="Fourmi" width="152" class="projects__project__logo">
+        </a>
+    </div>
+
+    <div class="projects__project">
+        <a href="https://giann.itch.io/settlers-of-the-deep">
+            <img src="/static/img/sotd_logo.png" alt="Settlers of the Deep" width="152" class="projects__project__logo">
+        </a>
+    </div>
+
+</section>
