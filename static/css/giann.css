@@ -33,8 +33,6 @@
 
 /* Palette */
 :root {
-    --background:     #1E2541;
-    --foreground:     #EEFFFF;
     --black:          #1E2541;
     --red:            #F0719B;
     --green:          #5AF7B0;
@@ -52,6 +50,9 @@
     --bright-cyan:    #47BAE8;
     --bright-white:   #DEE6E7;
     --color16:        #2A335A;
+
+    --foreground:     var(--white);
+    --background:     var(--black);
 }
 
 body {
@@ -60,4 +61,73 @@ body {
     background-color: var(--background);
     /*background-image: linear-gradient( to top left, var(--black), var(--bright-black) 70% );*/
     color: var(--foreground);
+
+    font-size: .75rem;
+}
+
+h1, h2, h3, h4 {
+    font-size: 1rem;
+    color: var(--yellow);
+}
+
+a {
+    text-decoration: none;
+    color: var(--foreground);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    font-weight: 500;
+}
+
+.content {
+    width: 600px;
+    margin: auto;
+}
+
+section {
+    margin: 20px 0;
+}
+
+.projects {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.projects__project {
+    display: inline-block;
+    width: 20%;
+    height: 10.5em;
+    font-size: .8em;
+    vertical-align: top;
+    padding: .5em;
+    border-radius: .2em;
+}
+
+.projects__project:hover {
+    background-color: var(--bright-black);
+}
+
+.projects__project > a {
+    height: 100%;
+    display: block;
+}
+
+.projects__project a:hover {
+    text-decoration: none;
+}
+
+.projects__project__title {
+    font-weight: 500;
+    margin-bottom: .3em;
+    color: var(--magenta);
+}
+
+.projects__project__logo {
+    display: block;
+    height: 4em;
+    margin: auto auto 1em auto;
 }

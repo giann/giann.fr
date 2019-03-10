@@ -1,11 +1,10 @@
-local fourmi   = require "fourmi"
 local builtins = require "fourmi.builtins"
 local colors   = require "term.colors"
-local plan     = fourmi.plan
-local task     = fourmi.task
+local plan     = require "fourmi.plan"
+local task     = require "fourmi.task"
 local sh       = builtins.sh
-local outdated = builtins.outdated
-local shtask   = builtins.shtask
+local sht      = builtins.task.sh
+local outdated = builtins.task.outdated
 
 local startLapisTask = task "lapis-start"
     :description "Start lapis server"
@@ -18,11 +17,11 @@ local startLapisTask = task "lapis-start"
         end
     end)
 
-local stopLapisTask = shtask("lapis", "term")
+local stopLapisTask = sht("lapis", "term")
     :name "lapis-term"
-    :opt("successMessage", "Lapis stopped")
-    :opt("failureMessage", "Lapis instance not running")
-    :opt("ignoreError", true)
+    :property("successMessage", "Lapis stopped")
+    :property("failureMessage", "Lapis instance not running")
+    :property("ignoreError", true)
 
 local downloadFengari = task "fengari"
     :description "Get fengari"
@@ -32,9 +31,7 @@ local downloadFengari = task "fengari"
             "-L", "https://github.com/fengari-lua/fengari-web/releases/download/v0.1.4/fengari-web.js",
             "-o", "static/js/fengari-web.js")
             and "static/js/fengari-web.js"
-    end) ^ function()
-            return outdated "static/js/fengari-web.js"
-        end
+    end)
 
 return {
     plan "serve"
@@ -44,7 +41,7 @@ return {
         ),
 
     plan "stop"
-        :description "Start server"
+        :description "Stop server"
         :task(
             stopLapisTask
         ),
@@ -58,6 +55,7 @@ return {
     plan "all"
         :description "Build giann.fr"
         :task(
-            downloadFengari .. stopLapisTask .. startLapisTask
+            (outdated "static/js/fengari-web.js" & downloadFengari)
+                .. stopLapisTask .. startLapisTask
         )
 }
