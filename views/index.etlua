@@ -1,65 +1,82 @@
 <div class="content">
-    <h1>Giann</h1>
+    <div class="col col--aside">
+        <h1>Benoit Giannangeli</h1>
+        <h2>@giann</h2>
 
-    <div class="bio">
-        Front-End Web and iOS Developer, Game Developer, Musician, Lua enthusiast🌙
+        <div class="bio">
+            Front-End Web and iOS Developer, Game Developer, Musician, Lua enthusiast.
+        </div>
+
+        <div class="links">
+            <a href="https://github.com/giann" target="_blank">
+                <img src="/static/img/github.png" height="16">
+            </a>
+
+            <a href="https://twitter.com/giann" target="_blank">
+                <img src="/static/img/twitter.png" height="16">
+            </a>
+
+            <a href="https://giann.itch.io/" target="_blank">
+                <img src="/static/img/itch.svg" height="16">
+            </a>
+        </div>
     </div>
 
-    <section>
-        
-        Here are some of the projects I'm working on:
-
-        <div class="projects">
-            <div class="projects__project">
+    <div class="col col--main">
+        <div class="row">
+            <div class="project">
                 <a target="_blank" href="https://fengari.io">
-                    <img src="https://fengari.io/static/images/logo.png" alt="Fengari" class="projects__project__logo">
-                    <div class="projects__project__title">Fengari</div>
-                    <span class="projects__project__description">
+                    <img src="/static/img/fengari.png" alt="Fengari" class="project__logo">
+                    <div class="project__title">Fengari</div>
+                    <span class="project__description">
                         The Lua VM written in JS ES6 for Node and the browser
                     </span>
                 </a>
             </div>
 
-            <div class="projects__project">
+            <div class="project">
                 <a target="_blank" href="https://github.com/giann/sirocco">
-                    <img src="https://github.com/giann/sirocco/raw/master/assets/logo.png" alt="Sirocco" class="projects__project__logo">
-                    <div class="projects__project__title">Sirocco</div>
-                    <span class="projects__project__description">
+                    <img src="/static/img/sirocco.png" alt="Sirocco" class="project__logo">
+                    <div class="project__title">Sirocco</div>
+                    <span class="project__description">
                         A collection of interactive command line prompts for Lua
-                    </span>
-                </a>
-            </div>
-
-            <div class="projects__project">
-                <a target="_blank" href="https://github.com/giann/croissant">
-                    <img src="https://github.com/giann/croissant/raw/master/assets/logo.png" alt="Croissant" class="projects__project__logo">
-                    <div class="projects__project__title">Croissant</div>
-                    <span class="projects__project__description">
-                        A Lua REPL and debugger
-                    </span>
-                </a>
-            </div>
-
-            <div class="projects__project">
-                <a target="_blank" href="https://github.com/giann/fourmi">
-                    <img src="https://github.com/giann/fourmi/raw/master/assets/logo.png" alt="Fourmi" class="projects__project__logo">
-                    <div class="projects__project__title">Fourmi</div>
-                    <span class="projects__project__description">
-                        A small taskrunner written in Lua
-                    </span>
-                </a>
-            </div>
-
-            <div class="projects__project">
-                <a target="_blank" href="https://giann.itch.io/settlers-of-the-deep">
-                    <img src="/static/img/sodt_logo.png" alt="Settlers of the Deep" class="projects__project__logo">
-                    <div class="projects__project__title">Settlers of the Deep</div>
-                    <span class="projects__project__description">
-                        A Settlers/Rogue-like game
                     </span>
                 </a>
             </div>
         </div>
 
-    </section>
-</div>
+        <div class="row">
+            <div class="project">
+                <a target="_blank" href="https://github.com/giann/croissant">
+                    <img src="/static/img/croissant.png" alt="Croissant" class="project__logo">
+                    <div class="project__title">Croissant</div>
+                    <span class="project__description">
+                        A Lua REPL and debugger
+                    </span>
+                </a>
+            </div>
+
+            <div class="project">
+                <a target="_blank" href="https://github.com/giann/fourmi">
+                    <img src="/static/img/fourmi.png" alt="Fourmi" class="project__logo">
+                    <div class="project__title">Fourmi</div>
+                    <span class="project__description">
+                        A small taskrunner written in Lua
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="project">
+                <a target="_blank" href="https://giann.itch.io/settlers-of-the-deep">
+                    <img src="/static/img/sodt_logo.png" alt="Settlers of the Deep" class="project__logo">
+                    <div class="project__title">Settlers of the Deep</div>
+                    <span class="project__description">
+                        A Settlers/Rogue-like game
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

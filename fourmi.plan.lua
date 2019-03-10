@@ -1,7 +1,7 @@
 local builtins = require "fourmi.builtins"
-local colors   = require "term.colors"
 local plan     = require "fourmi.plan"
 local task     = require "fourmi.task"
+local log      = require "fourmi.log"
 local sh       = builtins.sh
 local sht      = builtins.task.sh
 local outdated = builtins.task.outdated
@@ -11,7 +11,7 @@ local startLapisTask = task "lapis-start"
     :perform(function(self, env)
         local ok, err = sh("lapis", "server", env or "development")
         if ok then
-            print(colors.yellow "Lapis started listening on localhost:8080")
+            log.warn "Lapis started listening on localhost:8080"
         else
             error(err)
         end
