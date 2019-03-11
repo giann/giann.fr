@@ -33,6 +33,9 @@ local downloadFengari = task "fengari"
             and "static/js/fengari-web.js"
     end)
 
+local update =
+    sht("ssh", "root@fengari.io", "cd /var/www/giann.fr && git pull origin master --rebase")
+
 return {
     plan "serve"
         :description "Start server"
@@ -52,10 +55,17 @@ return {
             downloadFengari
         ),
 
+    plan "update"
+        :descripotion "Update repo on droplet"
+        :task(
+            update
+        ),
+
     plan "all"
         :description "Build giann.fr"
         :task(
             (outdated "static/js/fengari-web.js" & downloadFengari)
+                .. update
                 .. stopLapisTask .. startLapisTask
         )
 }
