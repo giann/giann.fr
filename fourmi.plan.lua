@@ -56,7 +56,7 @@ return {
         ),
 
     plan "update"
-        :descripotion "Update repo on droplet"
+        :description "Update repo on droplet"
         :task(
             update
         ),

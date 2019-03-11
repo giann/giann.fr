@@ -1,5 +1,5 @@
 /* Font face */
-@font-face {
+/*@font-face {
     font-family: 'Fira Code';
     src: url('FiraCode-Light.woff2') format('woff2'),
         url('FiraCode-Light.woff') format('woff');
@@ -13,7 +13,7 @@
         url('FiraCode-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
-}
+}*/
 
 @font-face {
     font-family: 'Fira Code';
