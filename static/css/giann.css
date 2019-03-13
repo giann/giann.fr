@@ -92,6 +92,21 @@ a:visited {
     font-weight: 500;
 }
 
+.name {
+    height: 4em;
+}
+
+.name__logo {
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+}
+
+.name__plate {
+    display: inline-block;
+    vertical-align: top;
+}
+
 .bio {
     color: var(--green);
     font-size: 0.8em;

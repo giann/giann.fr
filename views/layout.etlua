@@ -6,6 +6,8 @@
     <title><%= page_title or "Giann" %></title>
 
     <link rel="stylesheet" type="text/css" href="/static/css/giann.css?v=1">
+
+    <link rel="shortcut icon" href="/static/img/logo.png?v=1" type="image/png"/>
 </head>
 <body>
     <% content_for("inner") %>

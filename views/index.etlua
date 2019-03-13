@@ -1,7 +1,12 @@
 <div class="content">
     <div class="col col--aside">
-        <h1>Benoit Giannangeli</h1>
-        <h2>@giann</h2>
+        <div class="name">    
+            <img src="/static/img/logo.png" class="name__logo">
+            <div class="name__plate">
+                <h1>Benoit Giannangeli</h1>
+                <h2>@giann</h2>
+            </div>
+        </div>
 
         <div class="bio">
             Front-End Web and iOS Developer, Game Developer, Musician, Lua enthusiast.
