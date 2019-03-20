@@ -13,16 +13,20 @@
         </div>
 
         <div class="links">
-            <a href="https://github.com/giann" target="_blank">
+            <a href="https://github.com/giann" target="_blank" alt="Github">
                 <img src="/static/img/github.png" height="16">
             </a>
 
-            <a href="https://twitter.com/giann" target="_blank">
+            <a href="https://twitter.com/giann" target="_blank" alt="Twitter">
                 <img src="/static/img/twitter.png" height="16">
             </a>
 
-            <a href="https://giann.itch.io/" target="_blank">
+            <a href="https://giann.itch.io/" target="_blank" alt="Itch">
                 <img src="/static/img/itch.svg" height="16">
+            </a>
+
+            <a href="https://dribbble.com/giann" target="_blank" alt="Dribbble">
+                <img src="/static/img/dribbble.png" height="16">
             </a>
         </div>
     </div>

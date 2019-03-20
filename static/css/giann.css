@@ -179,6 +179,9 @@ a:visited {
     margin: auto auto 1em auto;
 }
 
+.links a {
+    display: inline-block;
+}
 
 @media (max-width: 768px) {
 
